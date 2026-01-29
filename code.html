@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es">
+<head> 
+<meta charset="utf-8"/>
+<!-- Reivsar que si este bien configurado esto -->
+<meta name="Consultora dedicada al desarrollo de software a la medida" content= "Consultoría tecnológica especializada en cloud, ciberseguridad e inteligencia artificial. Soluciones escalables y seguras. width=device-width, initial-scale=1.0" name="viewport"/>
+<title></title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/> -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0d59f2",
+                        "background-light": "#f5f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .glass {
+            background: rgba(16, 22, 34, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .glow-soft {
+            box-shadow: 0 0 20px rgba(13, 89, 242, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<header class="backdrop-blur supports-[backdrop-filter]:bg-black/60 fixed top-0 w-full z-50 glass border-b border-white/10">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 text-primary">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+    <!-- Revisar para que sirve el path -->
+<path d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z"></path>
+</svg>
+</div>
+<span class="text-xl font-bold tracking-tight">Consultoria Tech CLN</span>
+</div>
+
+<!-- Navigation Links -->
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Servicios</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Proyectos</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Sobre Nosotros</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Contacto</a>
+<button class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all transform hover:scale-105 active:scale-95">
+                    Agenda una asesoría gratuita
+                    <!--Conectar con el calendar mio y agendar citas  -->
+                </button>
+</nav>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+<!-- Abstract Background -->
+<div class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_50%_50%,rgba(13,89,242,0.1),transparent_70%)]"></div>
+<div class="absolute top-0 left-0 w-full h-full opacity-20 pointer-events-none" data-alt="Abstract dark digital data visualization nodes" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDDPWPcwQrTQjOd6bJ6I0RgZj41dYxT8n6Q4CR_wq9mNFw0-l1nTL99wCzZ-IJAU8mVPfQ9PEpYuLo0U-vkjC8GZaFviKO7KNgQmceMj-6iKrUB4StwG_kfQJ1OFFdHUnbsumt2Nm3Eh1bb8pyLNkg2zqGtxLU8yqpXnXZ6JX13lrbz5c_i93J0-MIhfJSB5Fr3NntXlcKGlEezkDEUsNyZXE7Xc3mpFgy_tEZMoE450Nve26IngYO6x_7McE4bdrqImf9pDLNnxg"); background-size: cover;'></div>
+<div class="max-w-7xl mx-auto px-6 flex flex-col items-center text-center">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-widest mb-8">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+                Liderando la Innovación
+            </div>
+<h1 class="text-5xl md:text-6xl font-black leading-tight tracking-tight mb-6 max-w-4xl">
+                Transformación <span class="text-primary">DIGITAL</span> a medida para empresas que quieren escalar sin riesgos
+            </h1>
+<p class="text-lg md:text-xl text-slate-400 max-w-2xl mb-10 leading-relaxed">
+                Diseñamos y desarrollamos soluciones tecnológicas de alto impacto para empresas nacionales que buscan liderar el futuro digital con seguridad y escalabilidad.
+            </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary text-white px-8 py-4 rounded-xl text-base font-bold transition-all hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20">
+                    Ver Proyectos
+                </button>
+
+                <!-- Modificara por un link -->
+<button class="bg-white/5 border border-white/10 text-white px-8 py-4 rounded-xl text-base font-bold transition-all hover:bg-white/10">
+                    Nuestros Servicios
+                </button>
+</div>
+</div>
+</section>
+
+
+<!-- Stats & Features Overview -->
+<section class="py-20 bg-white/5 dark:bg-background-dark/50">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col gap-4 mb-12">
+<h2 class="text-3xl md:text-4xl font-bold leading-tight">Por qué elegirnos</h2>
+<div class="w-20 h-1.5 bg-primary rounded-full"></div>
+</div>
+
+
+<!-- Stats Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="flex flex-col gap-4 rounded-xl p-8 border border-white/10 bg-white/[0.02] glow-soft">
+    
+<span class="material-symbols-outlined text-primary text-4xl">history</span>
+<div>
+<p class="text-slate-400 text-sm font-medium mb-1">Años de Experiencia</p>
+<p class="text-3xl font-bold leading-tight">6+</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl p-8 border border-white/10 bg-white/[0.02] glow-soft">
+<span class="material-symbols-outlined text-primary text-4xl">task_alt</span>
+<div>
+<p class="text-slate-400 text-sm font-medium mb-1">Proyectos Entregados</p>
+<p class="text-3xl font-bold leading-tight">50+</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl p-8 border border-white/10 bg-white/[0.02] glow-soft">
+<span class="material-symbols-outlined text-primary text-4xl">support_agent</span>
+<div>
+<p class="text-slate-400 text-sm font-medium mb-1">Soporte de Expertos</p>
+<p class="text-3xl font-bold leading-tight">24/7</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl p-8 border border-white/10 bg-white/[0.02] glow-soft">
+<span class="material-symbols-outlined text-primary text-4xl">bolt</span>
+<div>
+<p class="text-slate-400 text-sm font-medium mb-1">Metodologías</p>
+<p class="text-3xl font-bold leading-tight">Ágiles</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+<!-- Expertise Section -->
+<section class="py-24">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div class="flex flex-col gap-8">
+<div class="space-y-4">
+<h2 class="text-4xl md:text-5xl font-black tracking-tight leading-tight">
+     <!--Nuestra Expertise en el Núcleo Tecnológico  -->
+                            Nuestra expertise en el núcleo tecnológico
+                        </h2>
+<p class="text-lg text-slate-400 leading-relaxed">
+                            Somos un equipo multifuncional con el objetivo de llevar la innovación tecnológica al centro de tu negocio con procesos seguros, escalables y orientados a resultados medibles.
+                        </p>
+</div>
+<div class="space-y-6">
+<div class="flex items-start gap-4 p-5 rounded-xl bg-white/[0.03] border border-white/5 transition-all hover:border-primary/30 group">
+<div class="p-3 rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined">security</span>
+</div>
+<div>
+<h3 class="text-lg font-bold mb-1">Proteccion de datos</h3>
+<p class="text-slate-400 text-sm">Protegemos tus activos digitales más valiosos con los estándares de seguridad más exigentes.</p>
+</div>
+</div>
+
+
+<div class="flex items-start gap-4 p-5 rounded-xl bg-white/[0.03] border border-white/5 transition-all hover:border-primary/30 group">
+<div class="p-3 rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined">cloud_done</span>
+</div>
+<div>
+<h3 class="text-lg font-bold mb-1">Estrategia Cloud</h3>
+<p class="text-slate-400 text-sm">Optimizamos tu infraestructura para una escalabilidad nacional y reducción de costos operativos.</p>
+</div>
+</div>
+
+<div class="flex items-start gap-4 p-5 rounded-xl bg-white/[0.03] border border-white/5 transition-all hover:border-primary/30 group">
+<div class="p-3 rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined">add_reaction</span>
+</div>
+<div>
+<h3 class="text-lg font-bold mb-1">Metodologías Agiles</h3>
+<p class="text-slate-400 text-sm">Usamos metodologías ágiles para garantizar entregas rápidas, eficientes y adaptativas a las necesidades cambiantes del cliente.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -inset-4 bg-primary/20 blur-3xl rounded-full opacity-30"></div>
+<div class="relative rounded-2xl overflow-hidden border border-white/10 aspect-square md:aspect-video lg:aspect-square">
+<img alt="Server room with blue lighting" class="w-full h-full object-cover" data-alt="High-tech server room with glowing blue cables" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYj4AOBSxZsufRxsFdoD1H37wXBK2QGZ0h6m4nceoZ3296XjsJOA28WxhDvxOr8uOVMnBffZSzSKUgkUJMwJF_G7fQK8icHCjyYEANTrHUCxSbmVhn6xWFkDWQXYkG-sirFApycA9WJgnQJzZKQ_AuBv6yUB3JHEwxxEVBP1_QlIO58CVilEWoVwj5Yr05jeflamxDXUAIAcQUJNJyNfISfOFdg4U8dZR_kRJbr4LL74J82lIjtrxBPquLlko60RbVXfgO9BbOvQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6 p-6 glass rounded-xl border border-white/10">
+<div class="flex items-center gap-4">
+<div class="flex -space-x-3">
+<div class="w-10 h-10 rounded-full border-2 border-background-dark bg-slate-700"></div>
+<div class="w-10 h-10 rounded-full border-2 border-background-dark bg-primary flex items-center justify-center font-bold text-xs">+5</div>
+</div>
+<p class="text-sm font-medium">Expertos certificados trabajando ahora mismo en nuevas soluciones. <br> <span class="text-primary">Tu podrias ser el siguiente experto</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Client Logo Slider -->
+<!-- <section class="py-16 border-t border-white/5">
+<div class="max-w-7xl mx-auto px-6">
+<p class="text-center text-slate-500 text-sm font-bold uppercase tracking-widest mb-12">Empresas que confían en nosotros</p>
+<div class="flex flex-wrap justify-center items-center gap-12 md:gap-20 opacity-40 grayscale"> -->
+
+
+<!-- Using placeholders for logo consistency -->
+<!-- <div class="h-8 w-32 bg-slate-400 rounded-sm" style="mask-image: url('https://placeholder.pics/svg/120x32'); -webkit-mask-image: url('https://placeholder.pics/svg/120x32'); mask-repeat: no-repeat; mask-position: center;"></div>
+<div class="h-8 w-32 bg-slate-400 rounded-sm" style="mask-image: url('https://placeholder.pics/svg/120x32'); -webkit-mask-image: url('https://placeholder.pics/svg/120x32'); mask-repeat: no-repeat; mask-position: center;"></div>
+<div class="h-8 w-32 bg-slate-400 rounded-sm" style="mask-image: url('https://placeholder.pics/svg/120x32'); -webkit-mask-image: url('https://placeholder.pics/svg/120x32'); mask-repeat: no-repeat; mask-position: center;"></div>
+<div class="h-8 w-32 bg-slate-400 rounded-sm" style="mask-image: url('https://placeholder.pics/svg/120x32'); -webkit-mask-image: url('https://placeholder.pics/svg/120x32'); mask-repeat: no-repeat; mask-position: center;"></div>
+<div class="h-8 w-32 bg-slate-400 rounded-sm" style="mask-image: url('https://placeholder.pics/svg/120x32'); -webkit-mask-image: url('https://placeholder.pics/svg/120x32'); mask-repeat: no-repeat; mask-position: center;"></div>
+</div>
+</div>
+</section> -->
+<!-- Footer -->
+<footer class="bg-black/40 pt-20 pb-10 border-t border-white/5">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-3">
+<div class="w-6 h-6 text-primary">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z"></path>
+</svg>
+</div>
+<span class="text-xl font-bold tracking-tight">TechConsult</span>
+</div>
+<p class="text-slate-500 text-sm leading-relaxed">
+                        Redefiniendo el panorama tecnológico empresarial a través de la consultoría estratégica y el desarrollo de software de vanguardia.
+                    </p>
+</div>
+<div>
+<h4 class="font-bold mb-6">Servicios</h4>
+<ul class="space-y-4 text-sm text-slate-500">
+<li><a class="hover:text-primary transition-colors" href="#">Infraestructura Cloud</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Desarrollo de Software</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Ciberseguridad</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6">Compañía</h4>
+<ul class="space-y-4 text-sm text-slate-500">
+<li><a class="hover:text-primary transition-colors" href="#">Sobre Nosotros</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Nuestros Proyectos</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6">Contacto</h4>
+<ul class="space-y-4 text-sm text-slate-500">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-lg">mail</span>consultoria.tech.cln@gmail.com</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-lg">call</span> +52 667 1533951</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-lg">location_on</span>Sinaloa, México</li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-600 text-xs">
+<p>© 2026 ConsultoriaTechCuliacan. Todos los derechos reservados.</p>
+<div class="flex gap-6">
+<a class="hover:text-white transition-colors" href="#">Privacidad</a>
+<a class="hover:text-white transition-colors" href="#">Términos</a>
+<a class="hover:text-white transition-colors" href="#">Cookies</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
