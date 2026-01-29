@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Consultoria Tech CLN</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#00f0ff","primary-dark": "#0077ff","background-light": "#f0f4f8",
+                        "background-dark": "#050b18","accent-blue": "#0a192f",},
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        .glass {
+            background: rgba(10, 25, 47, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(0, 240, 255, 0.1);
+        }
+        .timeline-line {
+            background: linear-gradient(180deg, #00f0ff 0%, #050b18 100%);
+        }
+        .tech-pattern {
+            background-color: #050b18;
+            background-image: 
+                radial-gradient(circle at 2px 2px, rgba(0, 240, 255, 0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen">
+<header class="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-primary/10 px-6 lg:px-40 py-3">
+<div class="max-w-[1200px] mx-auto flex items-center justify-between">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3">
+<div class="text-primary">
+<svg class="size-" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.8261 30.5736C16.7203 29.8826 20.2244 29.4783 24 29.4783C27.7756 29.4783 31.2797 29.8826 34.1739 30.5736C36.9144 31.2278 39.9967 32.7669 41.3563 33.8352L24.8486 7.36089C24.4571 6.73303 23.5429 6.73303 23.1514 7.36089L6.64374 33.8352C8.00331 32.7669 11.0856 31.2278 13.8261 30.5736Z" fill="currentColor"></path>
+<path clip-rule="evenodd" d="M39.998 35.764C39.9944 35.7463 39.9875 35.7155 39.9748 35.6706C39.9436 35.5601 39.8949 35.4259 39.8346 35.2825C39.8168 35.2403 39.7989 35.1993 39.7813 35.1602C38.5103 34.2887 35.9788 33.0607 33.7095 32.5189C30.9875 31.8691 27.6413 31.4783 24 31.4783C20.3587 31.4783 17.0125 31.8691 14.2905 32.5189C12.0012 33.0654 9.44505 34.3104 8.18538 35.1832C8.17384 35.2075 8.16216 35.233 8.15052 35.2592C8.09919 35.3751 8.05721 35.4886 8.02977 35.589C8.00356 35.6848 8.00039 35.7333 8.00004 35.7388C8.00004 35.739 8 35.7393 8.00004 35.7388C8.00004 35.7641 8.0104 36.0767 8.68485 36.6314C9.34546 37.1746 10.4222 37.7531 11.9291 38.2772C14.9242 39.319 19.1919 40 24 40C28.8081 40 33.0758 39.319 36.0709 38.2772C37.5778 37.7531 38.6545 37.1746 39.3151 36.6314C39.9006 36.1499 39.9857 35.8511 39.998 35.764ZM4.95178 32.7688L21.4543 6.30267C22.6288 4.4191 25.3712 4.41909 26.5457 6.30267L43.0534 32.777C43.0709 32.8052 43.0878 32.8338 43.104 32.8629L41.3563 33.8352C43.104 32.8629 43.1038 32.8626 43.104 32.8629L43.1051 32.865L43.1065 32.8675L43.1101 32.8739L43.1199 32.8918C43.1276 32.906 43.1377 32.9246 43.1497 32.9473C43.1738 32.9925 43.2062 33.0545 43.244 33.1299C43.319 33.2792 43.4196 33.489 43.5217 33.7317C43.6901 34.1321 44 34.9311 44 35.7391C44 37.4427 43.003 38.7775 41.8558 39.7209C40.6947 40.6757 39.1354 41.4464 37.385 42.0552C33.8654 43.2794 29.133 44 24 44C18.867 44 14.1346 43.2794 10.615 42.0552C8.86463 41.4464 7.30529 40.6757 6.14419 39.7209C4.99695 38.7775 3.99999 37.4427 3.99999 35.7391C3.99999 34.8725 4.29264 34.0922 4.49321 33.6393C4.60375 33.3898 4.71348 33.1804 4.79687 33.0311C4.83898 32.9556 4.87547 32.8935 4.9035 32.8471C4.91754 32.8238 4.92954 32.8043 4.93916 32.7889L4.94662 32.777L4.95178 32.7688ZM35.9868 29.004L24 9.77997L12.0131 29.004C12.4661 28.8609 12.9179 28.7342 13.3617 28.6282C16.4281 27.8961 20.0901 27.4783 24 27.4783C27.9099 27.4783 31.5719 27.8961 34.6383 28.6282C35.082 28.7342 35.5339 28.8609 35.9868 29.004Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<span class="text-xl font-bold tracking-tight">Consultoria Tech CLN</span>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Inicio</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Servicios</a>
+<a class="text-sm font-medium text-primary underline underline-offset-8 decoration-2" href="quienes-somos.html">Nosotros</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Proyectos</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<!-- <div class="relative hidden sm:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-lg">search</span>
+<input class="bg-slate-100 dark:bg-accent-blue/50 border border-transparent dark:border-primary/20 rounded-lg pl-10 pr-4 py-2 text-sm focus:ring-2 focus:ring-primary focus:outline-none w-48 transition-all" placeholder="Buscar..." type="text"/>
+</div> -->
+<button class="bg-primary hover:bg-primary-dark text-background-dark px-5 py-2 rounded-lg text-sm font-bold transition-all shadow-lg shadow-primary/20">Contáctanos</button>
+</div>
+</div>
+</header>
+<main class="max-w-[1200px] mx-auto px-6 lg:px-40 py-10">
+<section class="mb-16">
+<div class="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-2xl tech-pattern border border-primary/10">
+<div class="absolute inset-0 opacity-40 mix-blend-overlay bg-cover bg-center" data-alt="High tech digital network circuit pattern gradient" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCMGaHsTD5brdblHX97ASlK015tpfdOC5BboQqlgExMzeJRU6kUD1IwR6Bzg8cs-g3SduIjA0b6jj9DGUIFSemo2cxH0GidftRWzjv4aQZV0M960DBbS_jnF62c_stu2T0sgbZXAAtTsLzzaeVUWOLoghPT_00tzo2a41EN6RNYhQoF_MzTzosNHaEaQgb9UH7fAlFEWG8_lx6OanaPYjJRqKd6KC2cyUhHi8ls53TKWo0d49VjRg4btIsrHqHOnb_34iKA3mqvyw");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/60 to-transparent"></div>
+<div class="absolute inset-10 flex flex-col justify-end p-10">
+<div class="max-w-2xl">
+<span class="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider mb-4 border border-primary/30 backdrop-blur-sm">Nuestra Identidad</span>
+<h1 class="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight">Nuestra 
+    misión y visión</h1>
+<p class="text-slate-300 text-lg leading-relaxed">
+                        Impulsamos la evolución tecnológica de las empresas a través de soluciones disruptivas y consultoría de alto nivel en un ecosistema digital en constante cambio.
+                    </p>
+                    
+</div>
+</div>
+</div>
+</section>
+<section class="mb-12">
+<div class="flex flex-col md:flex-row items-baseline justify-between gap-4 border-b border-slate-200 dark:border-primary/20 pb-6">
+<div>
+<h2 class="text-3xl font-bold text-slate-900 dark:text-white">Nuestros Valores</h2>
+<p class="text-slate-500 dark:text-slate-400 mt-1">Lo que define nuestra cultura y cada proyecto que entregamos.</p>
+</div>
+<span class="text-primary font-bold text-sm tracking-widest uppercase">Propósito</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+<div class="glass p-8 rounded-xl flex flex-col items-center text-center hover:bg-primary/5 transition-all group">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-background-dark transition-colors">
+<span class="material-symbols-outlined text-3xl text-primary group-hover:text-background-dark">lightbulb</span>
+</div>
+<h3 class="text-xl font-bold mb-3 text-white">Innovación</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">Constantemente exploramos nuevas fronteras en IA, Cloud y Blockchain para ofrecer ventajas competitivas reales.</p>
+</div>
+<div class="glass p-8 rounded-xl flex flex-col items-center text-center hover:bg-primary/5 transition-all group">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-background-dark transition-colors">
+<span class="material-symbols-outlined text-3xl text-primary group-hover:text-background-dark">verified_user</span>
+</div>
+<h3 class="text-xl font-bold mb-3 text-white">Integridad</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">Actuamos con transparencia y ética radical, siendo socios de confianza para el crecimiento de nuestros clientes.</p>
+</div>
+<div class="glass p-8 rounded-xl flex flex-col items-center text-center hover:bg-primary/5 transition-all group">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-background-dark transition-colors">
+<span class="material-symbols-outlined text-3xl text-primary group-hover:text-background-dark">star_rate</span>
+</div>
+<h3 class="text-xl font-bold mb-3 text-white">Excelencia</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">Diseñamos sistemas resilientes y escalables con estándares de clase mundial, superando expectativas en cada entrega.</p>
+</div>
+</div>
+</section>
+<section class="mb-12">
+<div class="flex flex-col md:flex-row items-baseline justify-between gap-4 border-b border-slate-200 dark:border-primary/20 pb-6">
+<div>
+<h2 class="text-3xl font-bold text-slate-900 dark:text-white">Conoce a Nuestro Equipo</h2>
+<p class="text-slate-500 dark:text-slate-400 mt-1">Liderazgo apasionado con décadas de experiencia combinada.</p>
+</div>
+<span class="text-primary font-bold text-sm tracking-widest uppercase">Expertos</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+<div class="glass p-4 rounded-xl flex flex-col gap-4 group cursor-pointer overflow-hidden">
+<div class="w-full aspect-[4/5] bg-center bg-cover rounded-lg overflow-hidden relative" data-alt="Professional portrait of CEO Ana Garcia" style='background-image: url();'>
+
+<!-- Codigo para agrear imagen 
+    "https://lh3.googleusercontent.com/aida-public/AB6AXuB6rjE-OUWJN0858HHL7udIhrBsOK9CUdH4NviRbz0fWpX5IbKPdkL421MsM7V3z_639979VwEeDkPXJoQZBXbdSKUYEzhIyZKFen_5jMHMN7duhTSWrueEHH6PV0PTePliim0slx_dJ0O_Q3TOkdpqgfd31dXwkyDu0lRCSumvV2DaKdfpFo-qFwHttGZ8SeB3Co64nyF-QL438IVO_x3fQbnAXIlh1beQtB1LOiZnJjrB1lkWrmlby6EMQChhrkf03ra102G4Rg -->
+
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<div>
+<p class="text-white text-lg font-bold">Johann Gutierrez</p>
+<p class="text-primary text-sm font-medium">CEO &amp; Co Founder</p>
+<p class="text-slate-400 text-xs mt-2 line-clamp-2">6+ años como jefe de proyectos con enfoque en logistica</p>
+</div>
+<div class="flex gap-3 text-slate-500">
+<span class="material-symbols-outlined text-sm hover:text-primary transition-colors">link</span>
+<span class="material-symbols-outlined text-sm hover:text-primary transition-colors">mail</span>
+</div>
+</div>
+<div class="glass p-4 rounded-xl flex flex-col gap-4 group cursor-pointer overflow-hidden">
+<div class="w-full aspect-[4/5] bg-center bg-cover rounded-lg overflow-hidden relative" data-alt="Professional portrait of CTO Carlos Ruiz" style='background-image: url();'>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<div>
+<p class="text-white text-lg font-bold">Pedro Luis </p>
+<p class="text-primary text-sm font-medium">CTO &amp; Co Founder </p>
+<p class="text-slate-400 text-xs mt-2 line-clamp-2">Arquitecto Cloud certificado y experto en ciberseguridad avanzada.</p>
+</div>
+<div class="flex gap-3 text-slate-500">
+<span class="material-symbols-outlined text-sm hover:text-primary transition-colors">link</span>
+<span class="material-symbols-outlined text-sm hover:text-primary transition-colors">mail</span>
+</div>
+</div>
+<div class="glass p-4 rounded-xl flex flex-col gap-4 group cursor-pointer overflow-hidden">
+<div class="w-full aspect-[4/5] bg-center bg-cover rounded-lg overflow-hidden relative" data-alt="Professional portrait of Head of Design Elena Beltran" style='background-image: url();'>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<div>
+<p class="text-white text-lg font-bold">Brianda Quiñonez</p>
+<p class="text-primary text-sm font-medium">Head of Design</p>
+<p class="text-slate-400 text-xs mt-2 line-clamp-2">Especialista en UX estratégica enfocada en productos SaaS complejos.</p>
+</div>
+<div class="flex gap-3 text-slate-500">
+<span class="material-symbols-outlined text-sm hover:text-primary transition-colors">link</span>
+<span class="material-symbols-outlined text-sm hover:text-primary transition-colors">mail</span>
+</div>
+</div>
+<div class="glass p-4 rounded-xl flex flex-col gap-4 group cursor-pointer overflow-hidden">
+<div class="w-full aspect-[4/5] bg-center bg-cover rounded-lg overflow-hidden relative" data-alt="Professional portrait of Lead Consultant Marcos Soler" style='background-image: url();'>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<div>
+<p class="text-white text-lg font-bold">Said Rodriguez</p>
+<p class="text-primary text-sm font-medium">Developer full stack</p>
+<p class="text-slate-400 text-xs mt-2 line-clamp-2">Encargado del desarrollo frontend y backend de aplicaciones web.</p>
+</div>
+<div class="flex gap-3 text-slate-500">
+<span class="material-symbols-outlined text-sm hover:text-primary transition-colors">link</span>
+<span class="material-symbols-outlined text-sm hover:text-primary transition-colors">mail</span>
+</div>
+</div>
+</div>
+</section>
+<section class="mb-20">
+<div class="flex flex-col md:flex-row items-baseline justify-between gap-4 border-b border-slate-200 dark:border-primary/20 pb-6 mb-10">
+<div>
+<h2 class="text-3xl font-bold text-slate-900 dark:text-white">Nuestra Historia</h2>
+<p class="text-slate-500 dark:text-slate-400 mt-1">El camino que nos ha llevado a ser líderes en consultoría.</p>
+</div>
+<span class="text-primary font-bold text-sm tracking-widest uppercase">Evolución</span>
+</div>
+<div class="relative py-10 px-4">
+<div class="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 timeline-line -translate-x-1/2 rounded-full opacity-30"></div>
+<div class="space-y-12">
+<div class="relative flex flex-col md:flex-row items-center justify-between">
+<div class="flex-1 md:text-right md:pr-12 mb-4 md:mb-0">
+<h4 class="text-primary text-xl font-bold mb-1">Fundación</h4>
+<p class="text-slate-400 text-sm"> Consultoria Tech CLN nace con la visión de cerrar la brecha entre tecnología avanzada y necesidades de negocio.</p>
+</div>
+<div class="z-10 w-10 h-10 rounded-full bg-primary flex items-center justify-center border-4 border-background-dark shadow-[0_0_20px_rgba(0,240,255,0.4)]">
+<span class="text-[11px] text-background-dark font-black">2023</span>
+</div>
+<div class="flex-1 md:pl-12 hidden md:block"></div>
+</div>
+<div class="relative flex flex-col md:flex-row items-center justify-between">
+<div class="flex-1 md:pr-12 hidden md:block"></div>
+<div class="z-10 w-10 h-10 rounded-full bg-primary flex items-center justify-center border-4 border-background-dark shadow-[0_0_20px_rgba(0,240,255,0.4)]">
+<span class="text-[11px] text-background-dark font-black">2025</span>
+</div>
+<div class="flex-1 md:text-left md:pl-12 mb-4 md:mb-0">
+<h4 class="text-primary text-xl font-bold mb-1">Expansión de equipo</h4>
+<p class="text-slate-400 text-sm">Se creció el equipo debido a los requerimientos del momento, se realizaron capacitaciones constantes y certificaciones presenciales y online.</p>
+</div>
+</div>
+<div class="relative flex flex-col md:flex-row items-center justify-between">
+<div class="flex-1 md:text-right md:pr-12 mb-4 md:mb-0">
+<h4 class="text-primary text-xl font-bold mb-1">Primer proyecto grande</h4>
+<p class="text-slate-400 text-sm">Cerramos un proyecto de desarrollo web para una empresa líder en su sector demandando un proyecto de 7 meses.</p>
+</div>
+<div class="z-10 w-10 h-10 rounded-full bg-primary flex items-center justify-center border-4 border-background-dark shadow-[0_0_20px_rgba(0,240,255,0.4)]">
+<span class="text-[11px] text-background-dark font-black">2025</span>
+</div>
+<div class="flex-1 md:pl-12 hidden md:block"></div>
+</div>
+<div class="relative flex flex-col md:flex-row items-center justify-between">
+<div class="flex-1 md:pr-12 hidden md:block"></div>
+<div class="z-10 w-10 h-10 rounded-full bg-primary flex items-center justify-center border-4 border-background-dark shadow-[0_0_20px_rgba(0,240,255,0.4)]">
+<span class="text-[11px] text-background-dark font-black">2024</span>
+</div>
+<div class="flex-1 md:text-left md:pl-12 mb-4 md:mb-0">
+<h4 class="text-primary text-xl font-bold mb-1">Desarrollamos nuestros sistemas SaaS</h4>
+<p class="text-slate-400 text-sm">Desarrollamos sistemas SaaS para automatizar procesos de negocio y mejorar la eficiencia operativa además de seguir con el desarrollo a la medida</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="mb-20 glass rounded-2xl p-12 text-center relative overflow-hidden border border-primary/20">
+<div class="absolute -top-24 -right-24 w-64 h-64 bg-primary/10 blur-[100px] rounded-full"></div>
+<div class="absolute -bottom-24 -left-24 w-64 h-64 bg-primary-dark/10 blur-[100px] rounded-full"></div>
+<div class="relative z-10">
+<h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">¿Listo para transformar su futuro?</h2>
+<p class="text-slate-400 mb-8 max-w-xl mx-auto text-lg">Únete a las empresas líderes que ya están operando al siguiente nivel tecnológico con nuestra guía experta.</p>
+<button class="bg-primary hover:bg-primary-dark text-background-dark px-10 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-all shadow-xl shadow-primary/20">Comenzar Ahora</button>
+</div>
+</section>
+</main>
+<footer class="bg-slate-100 dark:bg-accent-blue/30 border-t border-slate-200 dark:border-primary/10 py-16 px-6 lg:px-40">
+<div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 mb-6">
+<div class="text-primary">
+<svg class="size-7" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.8261 30.5736C16.7203 29.8826 20.2244 29.4783 24 29.4783C27.7756 29.4783 31.2797 29.8826 34.1739 30.5736C36.9144 31.2278 39.9967 32.7669 41.3563 33.8352L24.8486 7.36089C24.4571 6.73303 23.5429 6.73303 23.1514 7.36089L6.64374 33.8352C8.00331 32.7669 11.0856 31.2278 13.8261 30.5736Z" fill="currentColor"></path>
+</svg>
+</div>
+<span class="text-xl font-bold text-white">TechConsultancy</span>
+</div>
+<p class="text-slate-400 text-sm max-w-xs">Ofreciendo excelencia en consultoría de TI, servicios de nube y transformación digital para empresas modernas que miran al futuro.</p>
+</div>
+<div>
+<h5 class="font-bold mb-4 text-white">Enlaces</h5>
+<ul class="space-y-2 text-sm text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">Servicios</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Equipo</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Blog</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Carreras</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold mb-4 text-white">Soporte</h5>
+<ul class="space-y-2 text-sm text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">Privacidad</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Términos</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contacto</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-[1200px] mx-auto mt-12 pt-8 border-t border-slate-200 dark:border-primary/10 text-center text-xs text-slate-500">
+        © 2024 TechConsultancy Inc. Todos los derechos reservados. Expertos en Transformación Digital.
+    </div>
+</footer>
+
+</body></html>
